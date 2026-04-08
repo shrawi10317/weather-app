@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.card {
+    width: 380px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box button {
+    padding: 12px 15px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+}
+
+/* Result */
+#result {
+    text-align: center;
+}
+
+/* City Name */
+#result h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+/* Temperature */
+#result h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #111;
+}
+
+/* Description */
+#result p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Weather Icon */
+.weather-icon {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+/* Details Box */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Each Detail */
+.details div {
+    background: #f8fafc;
+    padding: 12px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Icons */
+.details i {
+    font-size: 18px;
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+/* History */
+#history {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+#history span {
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 4px;
+    border-radius: 8px;
+    background: #e2e8f0;
+    cursor: pointer;
+}
+
+#history span:hover {
+    background: #cbd5f5;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+    }
+}
