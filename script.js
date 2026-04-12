@@ -2,7 +2,7 @@ let btn = document.getElementById("btn");
 let result = document.getElementById("result");
 let historyDiv = document.getElementById("history");
 
-let apiKey = "f729887986e9c7a8aa25ac64972b4b5e"; // 🔴 replace here
+let apiKey = "f729887986e9c7a8aa25ac64972b4b5e"; // 
 
 loadHistory();
 
@@ -23,10 +23,11 @@ async function getWeather() {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     try {
-        result.innerHTML = "⏳ Loading...";
+        result.innerHTML = " Loading...";
 
         let response = await fetch(url);
         let data = await response.json();
+        console.log(data)
 
         if (data.cod != 200) {
             result.innerHTML = "❌ City not found";
@@ -64,7 +65,7 @@ async function getWeather() {
         `;
 
     } catch (error) {
-        result.innerHTML = "❌ Error fetching data";
+        result.innerHTML = " Error fetching data";
     }
 }
 
